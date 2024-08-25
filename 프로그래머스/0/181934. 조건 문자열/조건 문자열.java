@@ -4,13 +4,13 @@ class Solution {
         if(ineq.equals(">")) {
             if(eq.equals("=")) {
                 answer = n >= m ? 1 : 0;
-            } else {
+            } else if(eq.equals("!")) {
                 answer = n > m ? 1 : 0;
             }
-        } else {
+        } else if(ineq.equals("<")) {
             if(eq.equals("=")) {
                 answer = n <= m ? 1 : 0;
-            } else {
+            } else if(eq.equals("!")) {
                 answer = n < m ? 1 : 0;
             }
         }
